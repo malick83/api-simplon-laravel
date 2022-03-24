@@ -17,6 +17,7 @@ class IdeaResource extends JsonResource
         return [
             'title' => 'Titre de mon idée: ' .$this->title,
             'suggestion' => substr($this->suggestion, 0, 10) .'...',
+            'statut' => 'Etat de l\'idée: ' .$this->statut,
         ];
     }
 }
