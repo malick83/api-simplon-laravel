@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Idea extends Model
 {
     use HasFactory;
-    protected $fillable = ['title', 'suggestion'];
+    protected $fillable = ['title', 'suggestion', 'statut'];
 }
