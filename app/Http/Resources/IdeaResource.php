@@ -15,9 +15,9 @@ class IdeaResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'title' => 'Titre de mon idée: ' .$this->title,
-            'suggestion' => substr($this->suggestion, 0, 10) .'...',
-            'statut' => 'Etat de l\'idée: ' .$this->statut,
+            'title' => $this->title,
+            'suggestion' => $this->suggestion,
+            'statut' => $this->statut,
         ];
     }
 }
